@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>prueba</title>
+    <script src="Script_A.js"></script>
+
+    <style>
+        #board table td {
+            padding: 5%;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+            border: 1px solid;
+        }
+
+        table {
+            text-align: center;
+            padding: 3%;
+        }
+
+    </style>
+</head>
+<body>
+
+<button onclick="play();">Ejecutar JS</button>
+<section>
+    <table>
+        <tr>
+
+            <td>
+                <div id="board"></div>
+            </td>
+
+            <td>
+                <table border=1>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Misiles recibidos</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Bote 1</td>
+                        <td id="score_of_boat_1">0</td>
+                    </tr>
+                    <tr>
+                        <td>Bote 2</td>
+                        <td id="score_of_boat_2">0</td>
+                    </tr>
+                    <tr>
+                        <td>Bote 3</td>
+                        <td id="score_of_boat_3">0</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td><strong>Tiros:</strong></td>
+            <td>
+                <div id="hits"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+</body>
+</html>
