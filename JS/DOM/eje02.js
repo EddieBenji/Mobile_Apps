@@ -10,13 +10,18 @@ function init() {
 
 }
 
-function show(id) {
+function show(id, btn) {
     var details = document.getElementById(id);
 
-    if (details.className == "show")
+    if (details.className == "show") {
         details.setAttribute('class', 'disappear');
-    else
-        details.setAttribute('class', 'show')
+        btn.innerHTML = "Mostrar";
+    }
+    else {
+        details.setAttribute('class', 'show');
+        btn.innerHTML = "No mostrar";
+
+    }
 
 }
 
