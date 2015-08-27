@@ -1,0 +1,15 @@
+.paragraph{
+    color: red;
+}
+
+details summary{
+    outline: none;
+}
+
+.show{
+    display: block;
+}
+
+.disappear{
+    display: none;
+}

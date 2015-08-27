@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 02</title>
+    <link rel="stylesheet" href="eje02.css" type="text/css"/>
+    <script src="eje02.js"></script>
+
+</head>
+<body>
+
+<h1>Párrafo 1</h1>
+
+<div id="p01">
+    <p class="content"><strong>Contenido</strong> del párrafo 1</p>
+    <button onclick="show(this.nextElementSibling.id);">Detalles</button>
+
+    <div id="details_p1" class = "disappear">
+        <p><strong>Detalles</strong> del párrafo 1.</p>
+    </div>
+
+</div>
+
+<div id="p02">
+    <p class="content"><strong>Contenido</strong> del párrafo 2</p>
+    <button onclick="show(this.nextElementSibling.id);">Detalles</button>
+
+    <div id="details_p2" class = "disappear">
+        <p><strong>Detalles</strong> del párrafo 2.</p>
+    </div>
+</div>
+
+
+<div id="p03">
+    <p class="content"><strong>Contenido</strong> del párrafo 3</p>
+    <button onclick="show(this.nextElementSibling.id);">Detalles</button>
+
+    <div id="details_p3" class = "disappear">
+        <p><strong>Detalles</strong> del párrafo 3.</p>
+    </div>
+
+</div>
+
+<br/>
+
+<details>
+    <summary>Texto de Resumen</summary>
+    <p>1er detalle</p>
+    <p>2o detalle</p>
+</details>
+
+</body>
+</html>
