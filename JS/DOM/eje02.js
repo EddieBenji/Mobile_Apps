@@ -10,8 +10,7 @@ function init() {
 
 }
 
-function show(id, btn) {
-    var details = document.getElementById(id);
+function show(details, btn) {
 
     if (details.className == "show") {
         details.setAttribute('class', 'disappear');
