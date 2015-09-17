@@ -10,18 +10,51 @@
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script>
 
+    <script>
+        $(document).ready(function () {
+            var btn = $('#test_button');
+
+            btn.click(function () {
+                alert("I was touched");
+            });
+        });
     </script>
 </head>
 <body>
-<section>
-    <ul data-role="listview">
-        <li><a href="index.html">Index</a></li>
-        <li><a href="second_page.html">Second</a></li>
-    </ul>
+<section data-role="page">
+    <header data-role="header" data-position="fixed" data-theme="b"><h2>Hello World !</h2></header>
+    <div data-role="content">
+        <ul>
+            <li><a id="test_button"  href="index.html" data-transition="slide" data-icon="home"
+                   data-role="button">Index</a></li>
+            <li><a href="second_page.html" data-transition="flip" data-icon="arrow-r" data-role="button">Second</a></li>
+            <li><a href="#test" data-transition="flow" data-icon="arrow-d" data-role="button">Third</a></li>
+            <li><a href="#test" data-transition="slide" data-icon="delete" data-role="button">Fourth</a></li>
+
+
+        </ul>
+    </div>
+    <footer data-role="footer" data-position="fixed">Eduardo Benjamín Canché Vázquez</footer>
+
 </section>
 
+<section data-role="page" id="test">
+    <header data-role="header" data-position="fixed" data-theme="b"><h2>Hello World !</h2></header>
+    <div data-role="content">aijsoiasdjoiasd</div>
+    <footer data-role="footer" data-position="fixed">Eduardo Benjamín Canché Vázquez</footer>
+</section>
+
+<section data-role="page" id="other_test">
+    <header data-role="header" data-position="fixed" data-theme="b"><h2>Hi!</h2></header>
+    <div data-role="content">
+
+        oisdfoijaofiwjefoiewjf
+    </div>
+
+    <footer data-role="footer" data-position="fixed">Eduardo Benjamín Canché Vázquez</footer>
+
+</section>
 
 
 </body>

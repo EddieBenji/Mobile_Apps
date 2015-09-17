@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css"/>
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+
+
+
     <link rel="stylesheet" href="css/styles.css"/>
 
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -15,15 +20,17 @@
 </head>
 <body>
 
-<section data-role="page" id="first_page">
-    <header data-role="header" data-position="fixed"><h2>Hello World !</h2></header>
+<section data-role="page" id="first_page" >
+    <header data-role="header" data-position="fixed" data-theme="b"><h2>Hello World !</h2></header>
     <div data-role="content">
         <p>Main Content</p>
 
         <ul>
-            <li><a href="second_page.html">Go to the second page</a></li>
+            <li><a href="second_page.html" class="ui-btn ui-btn-a" data-icon=home>Go to the second page</a></li>
             <!--<li><a href="#third_page">Go to the third page</a></li>-->
-            <li><a href="#third_page" data-rel="dialog">Open dialog</a></li>
+            <li><a href="#third_page" data-rel="dialog" class="ui-btn ui-btn-a">Open dialog</a></li>
+            <li><a href="homework.html" data-icon="arrow-l" data-role="button" data-rel="back">Back</a></li>
+
         </ul>
     </div>
     <footer data-role="footer" data-position="fixed">Eduardo Benjamín Canché Vázquez</footer>
